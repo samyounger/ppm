@@ -3,3 +3,63 @@
 
 @import "bootstrap";
 @import "font-stack";
+@import "colors";
+
+html {
+  // source: "http://www.sftphotography.co.uk/glasgow-photography-selection-black-white/"
+  background: url(../images/glasgow.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  background-color: transparent;
+}
+
+.navbar.navbar-default {
+  min-height: 80px;
+  // background: rgba(230, 234, 230, 0.5);
+  background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  border: none;
+  .navbar-brand {
+    padding: 0;
+    img {
+      height: 80px;
+    }
+  }
+  .container-fluid {
+    padding-right: 0;
+    .collapse {
+      .navbar-nav > li > a {
+        line-height: 50px;
+        font-size: 20px;
+        color: lighten($primary-color, 15%);
+      }
+      .navbar-nav >li {
+        &:hover {
+          background: white;
+        }
+      }
+    }
+  }
+}
+
+.title {
+  width: 100vw;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: calc(100vh - 230px);
+  h1 {
+    font-family: $title-font;
+    font-size: 60px;
+    color: white;
+    .portfolioName {
+      color: $secondary-color;
+    }
+    .pensionName {
+      color: $primary-color;
+    }
+  }
+}
