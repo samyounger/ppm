@@ -5622,7 +5622,9 @@ button.close {
   .hidden-print {
     display: none !important; } }
 /*# sourceMappingURL=bootstrap.min.css.map */
-html {
+.titlePage {
+  height: 100vh;
+  width: 100vw;
   background: url(../images/glasgow.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -5634,7 +5636,7 @@ body {
 
 .navbar.navbar-default {
   min-height: 80px;
-  background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0) 100%);
+  background: white;
   border: none; }
   .navbar.navbar-default .navbar-brand {
     padding: 0; }
@@ -5647,7 +5649,7 @@ body {
       font-size: 20px;
       color: #5b3698; }
     .navbar.navbar-default .container-fluid .collapse .navbar-nav > li:hover {
-      background: white; }
+      background: #f2eef9; }
 
 .title {
   width: 100vw;
