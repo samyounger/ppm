@@ -8,16 +8,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/"><img src="/images/logo.png" alt="logo" /></a>
+      <a class="navbar-brand" href="/"><img src={{ "/images/logo.png" | prepend: site.baseurl }} alt="logo" /></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="/about">About</a></li>
-        <li><a href="/portfoliomanagement">Portfolio Management</a></li>
-        <li><a href="/views">Our Views</a></li>
-        <li><a href="/contact">Contact Us</a></li>
+        <li><a href={{ "/about" | prepend: site.baseurl }}>About</a></li>
+        <li><a href={{ "/portfoliomanagement" | prepend: site.baseurl }}>Portfolio Management</a></li>
+        <li><a href={{ "/views" | prepend: site.baseurl }}>Our Views</a></li>
+        <li><a href={{ "/contact" | prepend: site.baseurl }}>Contact Us</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="https://www.investcentre.co.uk/LogIn/Username/">My Account</a></li>
