@@ -2,8 +2,10 @@
 ---
 
 @import "bootstrap";
+@import "bootstrap.min";
 @import "font-stack";
 @import "colors";
+@import "font-awesome.min";
 
 .titlePage {
   height: 100vh;
@@ -64,5 +66,126 @@ body {
     .pensionName {
       color: $primary-color;
     }
+  }
+}
+
+.companyDescription {
+  display: block;
+  width: 90%;
+  margin: 40px auto 0;
+  p {
+    font-size: 20px;
+  }
+}
+
+.mainContainer {
+  background: lightgrey;
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 22px;
+  &:hover {
+    opacity: 0.8;
+  }
+  h3 {
+    text-align: center;
+  }
+  p {
+    padding: 10px;
+  }
+}
+
+.about {
+  padding: 10px;
+  .aboutContainer {
+    margin: 0 auto;
+    width: 90%;
+    border-bottom: 1px solid;
+    .personContainer {
+      display: inline-block;
+      width: 23%;
+      vertical-align: top;
+      background: lightgrey;
+      margin: 10px;
+      padding: 10px;
+      &:hover {
+        opacity: 0.8;
+      }
+      h3, h4 {
+        margin: 0;
+        text-align: center;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+.portfolioManagementContainer {
+  padding: 10px;
+  .portfolioManagement {
+    vertical-align: top;
+    width: 48%;
+    display: inline-block;
+    margin: 0 auto;
+    .invProcess {
+      margin: 10px;
+      border: 1px solid lightgrey;
+      padding: 10px;
+      p {
+        text-align: center;
+      }
+    }
+    .fontContainer {
+      width: 50px;
+      margin: 0 auto;
+      i {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        font-size: 4em;
+      }
+    }
+  }
+  .portfolioStrategies {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+  }
+  .understandingInvestmentRisk {
+    border-top: 1px solid lightgrey;
+    h3 {
+      text-align: center;
+    }
+    .investmentRiskContainer {
+      background: lightgrey;
+      width: 33%;
+      display: inline-block;
+      vertical-align: top;
+      padding: 10px;
+      &:hover {
+        opacity: 0.8;
+      }
+      h4 {
+        text-align: center;
+        margin: 0 0 10px;
+      }
+    }
+  }
+}
+
+
+.investmentDisclaimer {
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+}
+
+
+
+footer {
+  background-color: lightgrey;
+  p {
+    text-align: center;
+    margin: 0;
   }
 }
